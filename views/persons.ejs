@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personas con Edad Superior a 15 años</title>
+</head>
+<body>
+  <h1>Personas con Edad Superior a 15 años</h1>
+  <ul>
+    <% filteredPersons.forEach(person => { %>
+      <li><%= person.name %> - <%= person.birthdate %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

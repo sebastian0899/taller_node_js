@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Productos</title>
+</head>
+<body>
+  <h1>Lista de Productos</h1>
+  <table>
+    <tr>
+      <th>Nombre del Producto</th>
+      <th>Precio</th>
+      <th>Cantidad</th>
+      <th>Valor del Stock</th>
+    </tr>
+    <% products.forEach(product => { %>
+      <tr>
+        <td><%= product.product_name %></td>
+        <td><%= product.product_price %></td>
+        <td><%= product.product_quantity %></td>
+        <td><%= product.stockValue %></td>
+      </tr>
